@@ -3,7 +3,7 @@ here I will be uploading scripts and projects that solves problems at my work, i
 
 I left here a little introduction about myself and my LinkedIn profile. Feel free to contact me if you have any question or suggestion.
 
-[German Granados] (https://www.linkedin.com/in/german-granados-data-into-strategies)
+[German Granados](https://www.linkedin.com/in/german-granados-data-into-strategies)
 
 ### About me:
 I’m a Mechanical Engineer with a MBA and a MLO, I’m currently working as a BI manager with hands-on experience in transforming raw data into business strategies, this includes Business understanding, data preparation, modeling, evaluation, and deployment.
