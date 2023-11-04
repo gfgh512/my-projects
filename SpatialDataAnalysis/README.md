@@ -4,7 +4,7 @@ In this repository, I will be sharing my work on spatial data analysis in Python
 
 ## List of projects
 
-### - [find_coordinate](https://https://github.com/gfgh512/my-projects/SpatialDataAnalysis/find_coordinate.py)
+### - [find_coordinate](https://github.com/gfgh512/my-projects/raw/master/SpatialDataAnalysis/find_coordinate.py)
 The goal of this project is to find the location of a given
 coordinate. The locations are municipalities in El Salvador,
 for each location we have the boundary of the municipality.
