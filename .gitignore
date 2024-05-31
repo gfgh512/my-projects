@@ -1,4 +1,8 @@
 *datawarehouse/
 test/
-__init__.py
-__pycache__/
+*__pycache__/
+*files_dump/
+*.mypy_cache/
+*myenv/
+*/.env
+*/.pylintrc
