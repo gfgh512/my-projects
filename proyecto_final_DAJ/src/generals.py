@@ -13,7 +13,9 @@ from sqlalchemy import create_engine
 import pandas as pd
 from dotenv import load_dotenv
 
-load_dotenv('.env')
+ENV_PATH = ("C:\\Users\\german.granados\\Documents\\"
+            'git_projects\\my-projects\\proyecto_final_DAJ\\.env')
+load_dotenv(ENV_PATH)
 
 
 def generate_dates(start_date_: str, end_date_: str) -> list:
@@ -38,7 +40,7 @@ def generate_dates(start_date_: str, end_date_: str) -> list:
     date_list = []
     while start_date_date <= end_date_date:
         date_list.append(start_date_date.strftime('%Y-%m'))
-        #start_date_date = start_date_date + relativedelta(months=1)
+        # start_date_date = start_date_date + relativedelta(months=1)
         start_date_date += relativedelta(months=1)
     return date_list
 
@@ -52,10 +54,20 @@ DB = "tlc_ny"
 db_string = f"postgresql+psycopg2://{POSTGRES_USER}:{POSTGRES_PASSWORD}@{POSTGRES_HOST}:{POSTGRES_PORT}/{DB}"
 CONN = create_engine(db_string)
 
-START_DATE = "202301"
-END_DATE = "202303"
+START_DATE_Q1_ANT = "202301"
+END_DATE_Q1_ANT = "202303"
 
-DATA_RANGE: list = generate_dates(START_DATE, END_DATE)
+START_DATE_Q1_LAST = "202310"
+END_DATE_Q1_LAST = "202312"
+
+START_DATE_Q1_ACT = "202401"
+END_DATE_Q1_ACT = "202403"
+
+dates_q1_ant = generate_dates(START_DATE_Q1_ANT, END_DATE_Q1_ANT)
+dates_q1_last = generate_dates(START_DATE_Q1_LAST, END_DATE_Q1_LAST)
+dates_q1_act = generate_dates(START_DATE_Q1_ACT, END_DATE_Q1_ACT)
+
+DATA_RANGE = dates_q1_ant + dates_q1_last + dates_q1_act
 
 if __name__ == "__main__":
     test_query = "SELECT * FROM yellow.taxi_trips limit 1"

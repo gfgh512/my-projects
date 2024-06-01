@@ -10,8 +10,8 @@ from tqdm import tqdm
 from generals import DATA_RANGE
 
 
-RAW_DATA_PATH = "./files_dump/raw_data/"
-CLEAN_DATA_PATH = "./files_dump/clean_data/"
+RAW_DATA_PATH = "./proyecto_final_DAJ/files_dump/raw_data/"
+CLEAN_DATA_PATH = "./proyecto_final_DAJ/files_dump/clean_data/"
 VEH_TYPE = "yellow_tripdata_"
 
 

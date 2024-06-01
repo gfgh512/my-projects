@@ -3,7 +3,7 @@ from generals import DATA_RANGE, CONN
 import pandas as pd
 from tqdm import tqdm
 
-CLEAN_DATA_PATH = "./files_dump/clean_data/"
+CLEAN_DATA_PATH = "./proyecto_final_DAJ/files_dump/clean_data/"
 VEH_TYPE = "yellow_tripdata_"
 TABLE_NAME = "taxi_trips"
 
@@ -55,4 +55,5 @@ def upload_month_chunks(date_: str, chunk_size_ = 10000) -> None:
 
 
 if __name__ == "__main__":
-    upload_month_chunks(DATA_RANGE[0])
+    for date in tqdm(DATA_RANGE):
+        upload_month_chunks(date)

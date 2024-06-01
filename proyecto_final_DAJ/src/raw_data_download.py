@@ -28,7 +28,7 @@ from generals import DATA_RANGE
 
 BASE_LINK = "https://d37ci6vzurychx.cloudfront.net/trip-data/"
 VEH_TYPE = "yellow_tripdata_"
-RAW_DATA_PATH = "./files_dump/raw_data/"
+RAW_DATA_PATH = "./proyecto_final_DAJ/files_dump/raw_data/"
 
 # Configuración del logger
 logger = logging.getLogger(__name__)

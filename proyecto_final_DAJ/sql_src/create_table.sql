@@ -1,4 +1,6 @@
-CREATE TABLE yellow_taxi_trips (
+drop table if exists yellow.yellow_taxi_trips;
+
+CREATE TABLE yellow.yellow_taxi_trips (
     trip_id SERIAL PRIMARY KEY,
     VendorID SMALLINT NOT NULL,
     tpep_pickup_datetime TIMESTAMP NOT NULL,
@@ -22,4 +24,4 @@ CREATE TABLE yellow_taxi_trips (
     Airport_fee NUMERIC(4,2)
 );
 
-CREATE INDEX idx_tpep_pickup_date ON yellow_taxi_trips (tpep_pickup_date);
+CREATE INDEX idx_tpep_pickup_date ON yellow.yellow_taxi_trips (tpep_pickup_date);
