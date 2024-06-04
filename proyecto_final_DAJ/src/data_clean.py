@@ -62,6 +62,9 @@ def clean_data(df_: pd.DataFrame) -> pd.DataFrame:
     """
     df_ = create_date_col(df_)
     df_ = order_cols(df_)
+    for col in df_.columns:
+        if df_[col].dtype == 'int32':
+            df_[col] = df_[col].astype('int64')
     return df_
 
 
