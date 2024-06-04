@@ -5,7 +5,7 @@ from tqdm import tqdm
 
 CLEAN_DATA_PATH = "./proyecto_final_DAJ/files_dump/clean_data/"
 VEH_TYPE = "yellow_tripdata_"
-TABLE_NAME = "taxi_trips"
+TABLE_NAME = "yellow_taxi_trips"
 
 def upload_month(date_: str) -> None:
     """
